@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "GitHub Contributions → Pink",
+  "version": "1.0",
+  "description": "Recolors your GitHub contribution graph in shades of neon pink.",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
